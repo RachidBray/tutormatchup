@@ -1,0 +1,113 @@
+/* @todo: remove this once issue fixed 
+* Gtihub: https://github.com/AyeCode/blockstrap-page-builder-blocks/issues/61
+*/
+.sidebar-search .geodir-filter-cat {
+	width: 100%;
+}
+
+/* Archive Page */
+@media (min-width: 576px) {
+	.row.row-cols-md-0 .card .card-header {
+		flex: 1 40%;
+	}
+}
+
+/*  wp form elements */
+textarea.form-control {
+	border: 1px solid #d5d2dc;
+}
+
+.wp-block-search__input {
+	border: 1px solid #d5d2dc;
+	border-radius: 0.5rem;
+}
+
+.wp-block-search__button {
+	border-radius: 0.5rem;
+}
+
+
+
+/* @todo: This CSS rule can be deprecated when shadow opacity control is implemented
+* Reduce Shadow opacity
+*/
+span.shadow-lg,
+div.shadow-lg {
+	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.08) !important;
+}
+
+span.shadow,
+div.shadow {
+	box-shadow: 0 0.125rem 0.5rem -0.25rem rgba(31, 27, 45, 0.08), 0 0.25rem 1rem rgba(31, 27, 45, 0.08) !important;
+}
+
+/* @todo: Adjust profile picture size */
+.company-logo .geodir-images img {
+	width: 200px !important;
+}
+
+
+/* @todo: This CSS rule can be deprecated when Dropdown menu controls are implemented */
+.nav-item.dropdown .dropdown-menu {
+	border: 0px;
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item {
+	font-weight: bold;
+}
+
+.nav-item.dropdown .dropdown-toggle {
+	padding: 1rem;
+}
+
+/* 
+* //@todo: UsersWP My account page
+*/
+/* Remove borders from nav items and adjust spacing */
+.uwp-account-class .navbar-light .nav-item {
+	border: 0;
+}
+
+.uwp-account-class .navbar-light .nav-item .nav-link {
+	display: flex;
+	align-items: center;
+}
+
+/* Add border radius */
+.uwp-account-class .navbar-light {
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+/* 
+* //@todo: UsersWP Author box
+*/
+
+.uwp_widget_author_box {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* 
+* @todo: GD Single page
+*/
+/* Add spacing below tab heading */
+.geodir-tabs .geodir-tabs-content hr {
+	margin-bottom: 1rem;
+}
+
+/* @todo: Check this: https://github.com/AyeCode/blockstrap-page-builder-blocks/pull/103/commits/5850cbdf37f7379e9310deee8d2f91033b5d8830 */
+.blockstrap-iconbox-icon svg {
+    width: 1em;
+	height: 1em;
+}
+
+
+/* 
+*	Shape divider bg color
+* //@todo: It's still inheriting the default color from the parent theme.
+*/
+
+.bg-light.blockstrap-shape-fill {
+    fill: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
